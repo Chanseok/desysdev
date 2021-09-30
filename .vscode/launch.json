@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Launch Chrome against localhost",
+        "url": "http://localhost:3000/?debug",
+        "webRoot": "${workspaceFolder}",
+        "runtimeArgs": [
+          "--disable-web-security",
+          "--auto-open-devtools-for-tabs",
+          "--user-data-dir=${env:HOME}/workspaceCache/00_ref_master",
+          "--load-extension=~/Library/Application Support/Google/Chrome/Default/Extensions/fmkadmapgofadopljbjfkapdkoienihi/4.18.0_1,~/Library/Application Support/Google/Chrome/Default/Extensions/lmhkpmbekcpmknklioeibfkpmmfibljd/2.17.2_1"
+        ]
+      },
+      {
+        "type": "pwa-msedge",
+        "request": "launch",
+        "name": "Launch Edge against localhost",
+        "url": "http://localhost:3000/?debug",
+        "webRoot": "${workspaceFolder}",
+        "runtimeArgs": [
+          "--disable-web-security",
+          "--auto-open-devtools-for-tabs",
+          "--user-data-dir=${env:HOME}/workspaceCache/Edge_01thinq_homeiot_web",
+          "--load-extension=~/Library/Application Support/Microsoft Edge/Default/Extensions/gpphkfbcpidddadnkolkpfckpihlkkil/4.18.0_0,~/Library/Application Support/Microsoft Edge/Default/Extensions/nnkgneoiohoecpdiaponcejilbhhikei/2.17.0_0"
+        ]
+      }
+    ]
+  }
+  
